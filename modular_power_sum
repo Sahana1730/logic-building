@@ -1,0 +1,15 @@
+def calculate_sum_mod():
+    total_sum = 0
+    n = int(input("enter num of pairs: "))
+    mod = int(input("enter modulo value: "))
+
+    for i in range(1, n + 1):
+        a = int(input(f"enter value of a{i}: "))
+        m = int(input(f"enter value of m{i}: "))
+        total_sum += a * m
+
+    return total_sum % mod
+
+
+sum_mod = calculate_sum_mod()
+print("final sum mod:", sum_mod)
