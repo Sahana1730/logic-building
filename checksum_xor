@@ -1,0 +1,13 @@
+n=int(input("enter sender data:"))
+checksum=int(input("enter checksum data:"))
+packet=[]
+for i in range(n):
+    packet.append(int(input("enter packet value:")))
+xor=0
+for p in packet:
+    xor^=p
+    
+if xor==checksum:
+    print("ok")
+else:
+    print("anomaly")
