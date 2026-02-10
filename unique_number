@@ -1,0 +1,14 @@
+n=int(input("enter list of array:"))
+result=0
+if not (1 <= n <= 10**5):
+    print("n is out of range")
+else:
+    for i in range(n):
+        a=int(input(f"enter number {i}:"))
+        if not (0 <= a <= 10**9):
+            print("element value out of range")
+
+        result ^=a  #xor gate
+    
+print(result)
+    
