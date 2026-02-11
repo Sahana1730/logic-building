@@ -1,0 +1,6 @@
+n=int(input("enter number of player:"))
+arr=[]
+for i in range(n):
+    a=int(input(f"enter player{i}:"))
+    arr.append(a)
+print(arr)
