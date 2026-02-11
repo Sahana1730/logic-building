@@ -1,0 +1,11 @@
+n=int(input("enter number of players:"))
+
+arr=[]
+for i in range(n):
+    a=int(input(f"enter timing of player{i}:"))
+    arr.append(a)
+    
+    
+arr.sort()   
+print(arr)
+print(arr[2])
