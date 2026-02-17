@@ -1,0 +1,6 @@
+n=10
+x=3
+for i in range(n):
+      i==x
+      break:
+   print(i,end=" ")
